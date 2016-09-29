@@ -182,11 +182,12 @@ body {
 
 .accordian {
     width: 100%;
+    max-width: 900px; 
     height: 320px;
     overflow: hidden;
     text-align: left;
     /*Time for some styling*/
-    margin: auto;
+    margin: 30px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -229,7 +230,6 @@ body {
 
 .accordian li img {
     display: block;
-    height: 320px;
 }
 
 /*Image title styles*/

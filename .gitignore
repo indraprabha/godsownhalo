@@ -8,3 +8,9 @@ node_modules/*
 /node_modules
 /public/templates/HTMLPage.html
 /screenshot.png
+*.njsproj
+*.dll
+/iisnode
+/obj
+*.picasa.ini
+/public/images/photography/gallery/.picasaoriginals

@@ -2,118 +2,110 @@
 
 {<body}
     <div id="photography" class="page-section">
+		<h2 class="page-heading"> To Bend the Light, I am </h2>
         <div class="container theme-showcase">
             <div class="accordian">
+				{?albums}
                 <ul>
+					{#albums}
                     <li>
                         <div class="image_title">
-                            <a href="#">Adventures</a>
+                            <a href="#">{.name}</a>
                         </div>
-                        <a data-toggle="modal" href="#AdventuresModal">
-                            <img src="images/photography/Adventures.jpg">
+                        <a data-toggle="modal" href="#{.name}Modal">
+                            <img class="album-face" src="{.path}/{.name}.jpg">
                         </a>
+						{?photos}
+						<div id="{.name}Modal" class="modal fade">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">{.name}</h4>
+									</div>
+									<div class="modal-body next">
+										<div id="wrapper">
+											<div id="columns">
+												{#photos}												
+												<div class="pin">
+													<a href="{.path}/{.name}" data-lightbox="{.name}" data-title="{.caption}">
+														<img  src="{.path}/{.name}" alt="{.caption}" />
+														<p>{.caption}</p>
+													</a>
+												</div>
+												{/photos}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{/photos}
                     </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Travel</a>
-                        </div>
-                        <a data-toggle="modal" href="#travelModal">
-                            <img src="images/photography/Travel.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Landscapes</a>
-                        </div>
-                        <a data-toggle="modal" href="#landscapeModal">
-                            <img src="images/photography/Landscapes.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Monochromes</a>
-                        </div>
-                        <a data-toggle="modal" href="#MonochromesModal">
-                            <img src="images/photography/Monochromes.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Cityscape</a>
-                        </div>
-                        <a data-toggle="modal" href="#CityscapeModal">
-                            <img src="images/photography/Cityscape.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Flowers</a>
-                        </div>
-                        <a data-toggle="modal" href="#FlowersModal">
-                            <img src="images/photography/Flowers.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Birds</a>
-                        </div>
-                        <a data-toggle="modal" href="#birdsModal">
-                            <img src="images/photography/Birds.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Nature</a>
-                        </div>
-                        <a data-toggle="modal" href="#natureModal">
-                            <img src="images/photography/Nature.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Reflections</a>
-                        </div>
-                        <a data-toggle="modal" href="#reflectionsModal">
-                            <img src="images/photography/Reflections.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Cycling</a>
-                        </div>
-                        <a data-toggle="modal" href="#cyclingModal">
-                            <img src="images/photography/Cycling.jpg">
-                        </a>
-                    </li>
+					{/albums}
                 </ul>
+				{/albums}
             </div>
-
-            <!--div id="instafeed"></div>
-            <div class="controls">
-                <div class="prev"></div>
-                <div class="next"></div>
-            </div-->
             <br/>
+			<img id="instagram-logo" src="../images/instagram-logo.png"/>
             <div class="instagram_list" id="js-instagram-list">
             </div>
-
         </div>
+
+		<div id="blueimp-gallery" class="blueimp-gallery">
+			<!-- The container for the modal slides -->
+			<div class="slides"></div>
+			<!-- Controls for the borderless lightbox -->
+			<h3 class="title"></h3>
+			<a class="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			<a class="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+			<a class="close"><i class="glyphicon glyphicon-remove-sign"></i></a>
+			<a class="play-pause"></a>
+			<ol class="indicator"></ol>
+			<!-- The modal dialog, which will be used to wrap the lightbox content -->
+			<div class="modal fade">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" aria-hidden="true">&times;</button>
+							<h4 class="modal-title"></h4>
+						</div>
+						<div class="modal-body next"></div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left prev">
+								<i class="glyphicon glyphicon-chevron-left"></i>
+								Previous
+							</button>
+							<button type="button" class="btn btn-primary next">
+								Next
+								<i class="glyphicon glyphicon-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </div> <!-- photography page -->
     <div class="page-section" id="work">    
+		<h2 class="page-heading"> To spare few drops of rain, I Possess </h2>
         <!--div id="blog">
             <a class="wordpress-timeline" href="http://godsownhalo.wordpress.com" data-theme="dark" width="700" height="640" lang="en" data-show-gravatars="false">Recent Posts</a>
         </div-->
-        <div class="github-widget pull-left"
+        <div class="github-widget"
         	data-toggle="github-widget"
             data-user="indraprabha"
             data-widget="repos"
-        	data-title="My GitHub repos"
+        	data-title="GitHub Repos"
         	data-footer="auto"
-        	data-extrainfo="true"
-        	data-limit="4">
+        	data-extrainfo="false"
+        	data-limit="5">
         </div>
         <div id="contact-me">
-            <p id="intro"> I'm a Freelance Online Presence Consultant for Small Business Owners & Professionals who are looking to build / enhance their Social Presence and Network..  </p>
+            <p id="intro"> 
+				I'm a Freelance Online Presence Consultant for Small Business Owners & Professionals 
+				who are looking to build / enhance their Social Presence and Network.. <br/>
+				Ok, That's just fancy way of saying I create websites; Drop a mail anytime you want one! 
+			</p>
             <br/>
             <div id="contact">
                 <a href="mailto:indraprabha@outlook.com"> <i class="icon icon-envelope-alt" aria-hidden="true"></i> </a>

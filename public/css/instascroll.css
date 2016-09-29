@@ -21,25 +21,26 @@
     white-space: nowrap;
     text-align: left;
     position: relative;
+    margin: 30px;
     -moz-transition:  opacity 0.5s ease-out; 
     -o-transition: opacity 0.5s ease-out; 
     -webkit-transition: opacity 0.5s ease-out; 
     -ms-transition: opacity 0.5s ease-out; 
     
     /* Slow */
-    -webkit-animation: moveSlideshow 60s linear infinite;
-    -moz-animation:    moveSlideshow 60s linear infinite;
+    -webkit-animation: moveSlideshow 60s linear infinite reverse;
+    -moz-animation:    moveSlideshow 60s linear infinite reverse;
         
     /*-webkit-transform: translate3d(0,0,0); Performance */
 }
 
 .instagram_list a {
-    margin-right: 30px;
-    vertical-align: top;
+    padding-top: 18px;
+    padding-left: 13px;
     display: block;
     width: 170px;
-    height: 210px;
-    float: left
+    height: 220px;
+    float: left;
 }
 
 .instagram_list a:hover img {
@@ -49,8 +50,8 @@
 }
 
 .instagram_list img {
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     display: block;
     margin-top: 20px;
     border-radius: 4px;

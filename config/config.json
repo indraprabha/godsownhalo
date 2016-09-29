@@ -1,74 +1,60 @@
 {
-
-    "mongodb": {
-        "hostname": "localhost",
-        "database": "mealbasketdb",
-        "port": 27017,
-        "username":"",
-        "password":""
-    },
-
-    "express": {
-        "view cache": false,
-        "view engine": "js",
-        "views": "path:./.build/templates"
-    },
+  "dust": {
+    "helpers": [
+      "dustjs-helpers"
+    ]
+  },
+  "express": {
+    "view cache": false,
+    "view engine": "js",
+    "views": "path:./.build/templates"
+  },
+  "galleryDir": "public/images/photography/gallery",
+  "middleware": {
 
 
-
-    "view engines": {
-        "js": {
-            "module": "makara",
-            "renderer": {
-                "method": "js",
-                "arguments": [
-                    { "cache": true, "helpers": "config:dust.helpers" }
-                ]
-            }
-        }
-    },
-
-    "dust": {
-        "helpers": [
-            "dustjs-helpers"
+    "makara": {
+      "priority": 100,
+      "enabled": true,
+      "module": {
+        "name": "makara",
+        "arguments": [
+          {
+            "i18n": "config:i18n",
+            "specialization": "config:specialization"
+          }
         ]
+      }
     },
 
 
-
-
-    "specialization": {
+    "static": {
+      "module": {
+        "arguments": [ "path:./.build" ]
+      }
     },
 
-    "middleware": {
-
-
-        "makara": {
-            "priority": 100,
-            "enabled": true,
-            "module": {
-                "name": "makara",
-                "arguments": [
-                    {
-                        "i18n": "config:i18n",
-                        "specialization": "config:specialization"
-                    }
-                ]
-            }
-        },
-
-
-        "static": {
-            "module": {
-                "arguments": [ "path:./.build" ]
-            }
-        },
-
-        "router": {
-            "module": {
-                "arguments": [{ "directory": "path:./controllers" }]
-            }
-        }
-
+    "router": {
+      "module": {
+        "arguments": [ { "directory": "path:./controllers" } ]
+      }
     }
+
+  },
+  "specialization": {
+  },
+  "view engines": {
+    "js": {
+      "module": "makara",
+      "renderer": {
+        "method": "js",
+        "arguments": [
+          {
+            "cache": true,
+            "helpers": "config:dust.helpers"
+          }
+        ]
+      }
+    }
+  }
 }

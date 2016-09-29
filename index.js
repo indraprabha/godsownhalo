@@ -26,8 +26,8 @@ options = {
 
 app = module.exports = express();
 api.use({
-  client_id: '9048c51006de4b12844ca7cddb1ae960',
-  client_secret: 'b3cfb68d7fbb4123ac2f056a67262d8c'
+  client_id: 'cc57d9baa93a4628bb689a0d6d7d4058',
+  client_secret: 'be6a2eaef0a94da48f31e393e23baf5f'
 });
 
 app.use(kraken(options));

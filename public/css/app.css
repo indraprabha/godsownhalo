@@ -6,7 +6,7 @@ html{
 }
 body {
 	padding-bottom: 30px;
-    font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
+    font-family: 'Poiret One', cursive;
     font-size: 13px;
 	font-style: normal;
 	font-weight: 200;
@@ -41,67 +41,18 @@ footer {
     padding-left: 2%;
     background-color: black;
     color: #FFFFFF;
-}
-form {
-    font-weight:normal;
-    font-size: 1.2em;
-}
-form > input {
-    width: 300px;
-    height: 40px;
-    padding: 0 10px 0 10px;
-    margin: 5px;
-    background-color: #fff;
-    border: 1px solid #c8c8c8;
-    border-radius: 5px;
-    color: #aeaeae;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-form > textarea {
-    width: 300px;
-    border: 1px solid #c8c8c8;
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-    margin: 5px;
+    z-index: 200;
 }
 
-form > input:focus {
-    color: #858585;
-}
-
-form > button {
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-    margin: 10px 10px 10px 10px;
-}
-h1 {
-    font-size: 72px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 50px;
-}
-h2 {
-    margin-top: 0.5em;
-}
 header {
-    /*background-image: url(/images/elements/flower-banner.jpg);
-    background-size: cover;
-    padding-top: 10px;*/
-    height: 610px;
+    height: 640px;
     background-image: url('../images/wallpaper.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    /*background-attachment: fixed;*/
     background-color: black;
     background-size: cover;
 }
-.page-section {
-	width: 100%;
-	min-height: 640px;
-	padding: 50px 0;
-}
+
 legend {
     width:inherit;
     padding:0 10px;
@@ -109,31 +60,6 @@ legend {
     margin-bottom: 5px;
 }
 
-.addToCartSection {
-    padding-top: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-.autocomplete-suggestions {
-    border: 1px solid #999;
-    background: #fff;
-    cursor: default;
-    overflow: auto;
-    color: black;
-}
-.autocomplete-suggestion {
-    padding: 10px 5px;
-    font-size: 1.2em;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.autocomplete-selected {
-    background: #f0f0f0;
-}
-.autocomplete-suggestions strong {
-    font-weight: normal;
-    color: #3399ff;
-}
 .badge {
     font-size: 16px;
     line-height: 2;
@@ -145,21 +71,6 @@ legend {
     color: white;
     font-size: 25px;
 }
-.checkbox {
-    /* All browsers except webkit*/
-    transform: scale(1.5);
-
-    /* Webkit browsers*/
-    -webkit-transform: scale(1.5);
-}
-.dishes li {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 1px 2px rgba(0,0,0,.5);
-    padding: .75em;
-    margin: .25em;
-    border-radius: 5px;
-    display: inline-block;
-}
 .floatright {
     float: right;
     margin-left: 10px;
@@ -167,6 +78,7 @@ legend {
 }
 .github-widget {
 	padding-left: 150px;
+    padding-right: 150px;
 }
 .item {
     margin: 15px;
@@ -189,126 +101,55 @@ legend {
     font-size: 1.5em;
     font-weight: bolder;
 }
-.jumbotron {
-    /*background-image: linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
-    background-color: crimson;
-    background-image: url('/images/background.png');*/
-    background-color: transparent;
-    padding-left: 50px;
-    z-index: 50;
-    width: 80%;
-    height: 100%;
-    text-align: center;
-}
 .list-group-item {
     background-color: transparent;
 }
-.logo {
-    max-width:60px;
-    margin-top: -7px;
-    padding: 5px;
+.modal-body{
+    padding:0px;
 }
-.navbar   {
-    /*Vertical menubar*/
-    width: 120px;
-    z-index: 100;
-    float: right;
-    padding: 10px 10px 30px 10px;
-    position: fixed;
-    /*padding: 50px 5px 5px 20px!important;
-    width: auto!important;
-    height: auto!important;
-    margin: 0 20px -30px -31px!important;
-    padding: 20px!important;*/
-    border-radius: 4px;
-    border: solid rgba(255,255,255,.5)!important;
-    border-width: 1px 0!important;
-    overflow: hidden;
-    text-align: center;
-    font-size: 13px!important;
-    line-height: 16px!important;
-    background: transparent!important;
-    /*box-shadow: 0 0 10px 5px rgba(0,0,0,.4)*/
+.modal-content {
+    background-color: #1b1617;
 }
-.navbar-nav > li {
-    padding: 0px;
-    width: 70px;
-    height: 70px;
-    margin: 20px 20px 0px 0px;
+.modal-header {
+    padding-left: 50px;
 }
-.navbar-brand, .navbar-nav > li > a {
-    color: black;
-    font-size: small;
-    font-weight: 400;
-    /*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);*/
+.modal-title {
+    font-weight: bold;
 }
-.navbar-toggle {
-    float: none;
+.page-section {
+	width: 100%;
+	min-height: 640px;
+	padding: 10px 0;
+    color: bisque;
+    font-size: 14px;
 }
-.navbar-toggle .icon-bar {
-    background-color: black;
+.page-heading {
+    padding: 20px;
+    font-family: 'Poiret One', cursive;
 }
-/*.nav > li.active {
-    background-color: whitesmoke;
-}
-.nav > li.active > a {
-    color: crimson;
-}*/
-.nav > li > a:hover,
-.nav > li > a:focus {
-    background-color: transparent;
-}
-.nav > li:hover,
-.nav > li:focus {
-    transform: scale(1.3,1.3);
-}
-.nm-np {
-    margin: 0;
-    padding: 0;
-}
+
 .panel {
     background-color: transparent;
+    border: none;
 }
-.panel-red > .panel-heading {
-    /*background-image: linear-gradient(to bottom, #DE3F3F 0%, #A42E2E 100%);
-    background-repeat: repeat-x;
-    color: whitesmoke;*/
+.panel-heading {
+    background-color: #372d2e;
+    color: bisque;
+} 
+.panel-footer {
+    background-color: #372d2e;
+    color: bisque;
 }
 .row {
     margin-top: 10px;
 }
 
-.sticky-note {
-    background-image:url('/images/sticky-note.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    padding: 40px 30px 10px 30px;
-    color: #372D2E;
-    font-size: medium;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Architects Daughter";
-    display: inline-table;
-}
-.theme-dropdown .dropdown-menu {
-    position: static;
-    display: block;
-    margin-bottom: 20px;
-}
-.theme-showcase .navbar .container {
-    width: auto;
-}
 .thumbnail {
     width: 100%;
 }
 .tiny {
     font-size: .75em;
     font-weight: lighter;
-}
-.yellow-button {
-    background-image: url('/images/elements/yellow-button.png');
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #contact-me {
@@ -318,45 +159,40 @@ legend {
     overflow: hidden;  
     padding: 50px;
 }
+#instagram-logo {
+    vertical-align: middle;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    width: 250px;
+    left: -30px;
+    margin-top: -15px;
+}
 #intro {
-    font-size: medium;
-    font-weight: bolder;
-    font-style: italic;
+    font-size: small;
+    font-family: 'Comfortaa', cursive;
 }
 #about {
     width: 50%;
     padding: 150px 0 0 0;
-    font-family: 'Indie Flower';
 }
 #about a {
     color: bisque;
     text-decoration: overline;
-}
-#menu {
-    /*border: ridge;
-    border-radius: 10px;*/
-    text-align: center;
-    vertical-align: middle;
-}
-#message {
-    display: inline-table;
-    text-align: left;
-    float: left;
-    padding: 30px;
+    font-family: 'Poiret One', cursive;
 }
 #photography {
-    background: white;
+    color: bisque;
+    background: #372d2e;
+    /*background-image: url('../images/ripple.gif');
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
-#userInfo {
-    display: inline;
-    width: 25%;
-    text-align: center;
-    margin-bottom: 35px
+#work {
+    background-image:url('../images/rain-drops.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#widget_scroll_container {
-    position: relative;
-}
-
 
 /*---------------*/
 /***** Sarah *****/
@@ -427,4 +263,68 @@ figure.effect-sarah:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+.album-face {
+    height: 320px;
+}
+#wrapper{
+	width: 90%;
+	max-width: 1100px;
+	min-width: 300px;
+	margin: 50px auto;
+}
+
+#columns{
+	/* the column-count property easily splits the content of a div into 3 columns. it's not accepted by most browsers on its own, so it's a good idea to use this with all the appropriate prefixes */
+	-webkit-column-count: 3;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+}
+
+.pin{
+	display: inline-block;
+	background: #FEFEFE;
+	//border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	column-break-inside: avoid;
+	padding: 5px;
+	/* let's give the background of the pins a little dimension by using a gradient */
+	background: linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.pin > a > img{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bttom: 15px;
+	margin-bottom: 5px;
+}
+
+.pin > a > p{
+	font-size: 13px;
+	font-family: Helvetica, sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+#columns:hover .pin:not(:hover){
+	opacity: 0.4;
+	/* this makes it so that when you hover over a pin, every pin EXCEPT the one that's hovere on gets a little less opaque */
+}
+
+/* a little responsive styling */
+@media (min-width: 960px){
+	#columns{
+		-webkit-column-count: 4;
+	}
+}
+
+@media (min-width: 1100px){
+	#columns{
+		-webkit-column-count: 5;
+	}
 }

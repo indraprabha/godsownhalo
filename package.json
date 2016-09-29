@@ -16,7 +16,9 @@
     "express": "^4.12.2",
     "kraken-js": "^1.0.3",
     "makara": "^2.0.3",
-    "mongodb-uri": "^0.9.7"
+    "mongodb-uri": "^0.9.7",
+    "cors": "^2.7.1",
+    "instagram-node": "^0.5.8"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
