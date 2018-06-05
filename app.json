@@ -1,0 +1,8 @@
+{
+  "name": "godsownhalo",
+  "description": "My personal website built with minimalist yet sophisticated appeal",
+  "version": "0.0.1",
+  "engines": {
+    "npm": "6.1.x"
+  }
+}
