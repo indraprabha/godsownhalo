@@ -5,6 +5,17 @@ var nconf = require('nconf');
 nconf.file('./config/config.json');
 const util = require('util');
 
+/*var AWS = require('aws-sdk');
+//AWS.config.loadFromPath('./config/aws.json');
+var s3 = new AWS.S3();
+s3.listBuckets(function (err, data) {
+    if (err) {
+        console.log("Error", err);
+    } else {
+        console.log("Bucket List", data.Buckets);
+    }
+});*/
+
 function galleryListing() {
     var galleryDir = nconf.get('galleryDir');
     console.log('gallery photos to be picked from ' + galleryDir);

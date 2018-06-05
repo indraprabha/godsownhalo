@@ -10,7 +10,7 @@
 					{#albums}
                     <li>
                         <div class="image_title">
-                            <a href="#">{.name}</a>
+                            <a href="#{.name}Modal">{.name}</a>
                         </div>
                         <a data-toggle="modal" href="#{.name}Modal">
                             <img class="album-face" src="{.path}/{.name}.jpg">
@@ -46,8 +46,8 @@
                 </ul>
 				{/albums}
             </div>
-            <br/>
-			<img id="instagram-logo" src="../images/instagram-logo.png"/>
+            
+			<!--img id="instagram-logo" src="../images/instagram-logo.png"/-->
             <div class="instagram_list" id="js-instagram-list">
             </div>
         </div>
@@ -85,12 +85,20 @@
 				</div>
 			</div>
 		</div>
+		<div id="contact-me">
+            <p id="intro">
+				What started as a child's attraction towards clouds, is now an adult's full-blown obsession of Nature watching!! 
+				<br/> I discovered Photography as a medium to express my admiration for Landscapes, Creatures, People and all those in the list of Nature's awesomeness.. 
+				<br/> Watch this space for my tribute to Mother Nature..
+			</p>
+        </div>
+
     </div> <!-- photography page -->
     <div class="page-section" id="work">    
 		<h2 class="page-heading"> To spare few drops of rain, I Possess </h2>
         <!--div id="blog">
             <a class="wordpress-timeline" href="http://godsownhalo.wordpress.com" data-theme="dark" width="700" height="640" lang="en" data-show-gravatars="false">Recent Posts</a>
-        </div-->
+        </div>
         <div class="github-widget"
         	data-toggle="github-widget"
             data-user="indraprabha"
@@ -99,8 +107,23 @@
         	data-footer="auto"
         	data-extrainfo="false"
         	data-limit="5">
-        </div>
-        <div id="contact-me">
+        </div-->
+
+		<div class="row">
+			<div class="column column-orange">
+			  <h3>Web Designer</h3>
+			  <p> Juggling a photographer and web designer hats have been a wholesome experience, in a way I can be my own Boss!! One can tell the other what photographs to create; In vice-versa where the photographs will fit-in</p>
+			</div>
+			<div class="column column-purple">
+			  <h3>Automation Architect</h3>
+			  <p> As a laid-back soul, I always found a way to get things done quicker & easier; Look where it got me ;) </p>
+			</div>
+			<div class="column column-pink">
+			  <h3> UX Quality Assurance </h3>
+			  <p> Once a QA always a QA, who can spot a bug among any dense foliage :) literally too.. </p>
+			</div>
+		</div>
+		<div id="contact-me">
             <p id="intro"> 
 				I'm a Freelance Online Presence Consultant for Small Business Owners & Professionals 
 				who are looking to build / enhance their Social Presence and Network.. <br/>

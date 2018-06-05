@@ -21,7 +21,6 @@
     white-space: nowrap;
     text-align: left;
     position: relative;
-    margin: 30px;
     -moz-transition:  opacity 0.5s ease-out; 
     -o-transition: opacity 0.5s ease-out; 
     -webkit-transition: opacity 0.5s ease-out; 

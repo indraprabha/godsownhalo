@@ -77,8 +77,8 @@ legend {
     margin-right: 0px;
 }
 .github-widget {
-	padding-left: 150px;
-    padding-right: 150px;
+	padding-left: 10%;
+    padding-right: 10%;
 }
 .item {
     margin: 15px;
@@ -107,8 +107,12 @@ legend {
 .modal-body{
     padding:0px;
 }
+.modal-body > img {
+    width:100%;
+}
 .modal-content {
     background-color: #1b1617;
+    max-inline-size: fit-content;
 }
 .modal-header {
     padding-left: 50px;
@@ -119,13 +123,18 @@ legend {
 .page-section {
 	width: 100%;
 	min-height: 640px;
-	padding: 10px 0;
+	padding: 0;
+    margin: 0;
     color: bisque;
     font-size: 14px;
 }
 .page-heading {
+    margin: 0 0 30px 0;
     padding: 20px;
     font-family: 'Poiret One', cursive;
+    background-color: goldenrod;
+    color: black;
+    font-size: xx-large;
 }
 
 .panel {
@@ -141,7 +150,8 @@ legend {
     color: bisque;
 }
 .row {
-    margin-top: 10px;
+    margin-top: 30px;
+    width: inherit;
 }
 
 .thumbnail {
@@ -153,7 +163,7 @@ legend {
 }
 
 #contact-me {
-    width: 75%;
+    width: 95%;
     height: auto;
     margin: auto; 
     overflow: hidden;  

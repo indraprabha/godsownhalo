@@ -6,14 +6,15 @@ jQuery(document).ready(function (t) {
     t.jsonp({
         "url": url,
         "data": {
-            "access_token": "35404723.cc57d9b.f776dfa36869462aacf127f21a5ba2a1"
+            "access_token": "35404723.e5bcca4.4b8f54e204f440b2aaea610cfbe7c5d2"
         },
         "success": function (i) {
             var s = i.data;
             for (var e in s) {
                 var o = t('<a href="" title=""><img src=""></a>');
+                var title = s[e].caption.text;
                 o.attr("href", s[e].images.standard_resolution.url),
-                o.attr("title", s[e].caption.text),
+                o.attr("title",title.substr(0, title.indexOf('\n'))),
                 o.find("img").attr("src", s[e].images.low_resolution.url),
                 o.appendTo("#js-instagram-list")
             }
